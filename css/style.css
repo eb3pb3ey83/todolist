@@ -100,7 +100,6 @@ form{
   border: 1px solid #ddd;
   opacity: 0;
   transition: .3s;
-  display: flex;
   transform: translateY(30px);
 }
 /* line 89, ../sass/style.scss */
@@ -123,7 +122,8 @@ form{
 /* line 104, ../sass/style.scss */
 .item .edit {
   width: 40px;
-  display: flex;
+  width:100%;
+  text-align:right;
 }
 /* line 107, ../sass/style.scss */
 .item .edit .ico {
@@ -197,8 +197,7 @@ form{
 }
 /* line 175, ../sass/style.scss */
 .item .write-note {
-  float: left;
-  width: calc(100% - 40px);
+  width: 100%;
   font-size: 16px;
   color: #666;
 }
