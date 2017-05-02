@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	
+
+</head>
+<body>
+
+    <div class="form-main">
+
+        <div class="category ">
+            <div class="form-div">
+                <h2 class='title'>
+                    <div class='switch'>
+                        <i class="orbit-bar-toggle-icon fa fa-chevron-down"></i>
+                        <ul class='list'>
+
+                            <li><a href="javascript:;">open</a></li>
+                            <li><a href="javascript:;">close</a></li>
+                            <li><a href="javascript:;">delete</a></li>
+                        </ul>
+
+                    </div>
+
+                早上</h2>
+                <div class="form morning">
+                        <div class="submit">
+                            <input type="button" value="待辦事項"  />
+                            <input type="button" value="詳細內容"  />
+                        </div>            
+                        <div class="typeword">
+                          <form>
+                            <input id="tempList" name="enterList" index="-1" cat='template' data='listMsg' type="text" class="feedback-input textbox" placeholder="Enter the list here..." id="name"/>
+                           </form>  
+
+                            <div class="submit-button">
+
+                             <textarea id="tempNote" name="enterNote" index="-1" cat='template' data='noteMsg' class="feedback-input textarea">
+                            </textarea> 
+                                    <a class='plane' href="javascript:;">
+                                        <span>SUBMIT</span> <img src="img/plane.png" alt="">
+                                    </a>
+                               
+                            </div>
+                        </div>
+
+
+
+                </div>            
+            </div>          
+        </div>
+        <div class="category ">
+            <div class="form-div">
+                <h2 class='title'>
+                    <div class='switch'>
+                        <i class="orbit-bar-toggle-icon fa fa-chevron-down"></i>
+                        <ul class='list'>
+
+                            <li><a href="javascript:;">open</a></li>
+                            <li><a href="javascript:;">close</a></li>
+                            <li><a href="javascript:;">delete</a></li>
+                        </ul>
+
+                    </div>
+                中午</h2>
+                <div class="form noon" >
+                        <div class="submit">
+                            <input type="button" value="待辦事項"  />
+                            <input type="button" value="詳細內容"  />
+                        </div>            
+                        <div class="typeword">
+                           <form>
+                            <input id="dataList" name="enterList" index="-1" cat='data' data='listMsg' type="text" class="feedback-input textbox" placeholder="Enter the list here..." id="name"/>
+                           </form>  
+                            <div class="submit-button">
+                                 <textarea id="dataNote" name="enterNote" index="-1" cat='data' data='noteMsg' class="feedback-input textarea" >
+                                </textarea> 
+                                <a class='plane' href="javascript:;">
+                                    <span>SUBMIT</span> <img src="img/plane.png" alt="">
+                                </a>   
+                            </div>                                            
+                        </div>
+
+                </div>            
+            </div>               
+        </div>
+        <div class="category ">
+            <div class="form-div">
+                <h2 class='title'>
+                    <div class='switch'>
+                        <i class="orbit-bar-toggle-icon fa fa-chevron-down"></i>
+                        <ul class='list'>
+
+                            <li><a href="javascript:;">open</a></li>
+                            <li><a href="javascript:;">close</a></li>
+                            <li><a href="javascript:;">delete</a></li>
+                        </ul>
+
+                    </div>
+                晚上</h2>
+                <div class="form night">
+                        <div class="submit">
+                            <input type="button" value="待辦事項"  />
+                            <input type="button" value="詳細內容"  />
+                        </div>            
+                        <div class="typeword">
+                            <form>
+                            <input id="finishList" name="enterList" index="-1" cat='finished' data='listMsg' type="text" class="feedback-input textbox" placeholder="Enter the list here..." id="name"/>
+                           </form>  
+                            <div class="submit-button">
+                                <textarea id="finishNote" name="enterNote" index="-1" cat='finished' data='noteMsg' class="feedback-input textarea" >
+                                </textarea> 
+                                <a class='plane' href="javascript:;">
+                                    <span>SUBMIT</span> <img src="img/plane.png" alt="">
+                                </a> 
+                            </div>                                                         
+                        </div>
+
+                </div>            
+            </div>             
+        </div>
+
+
+    </div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

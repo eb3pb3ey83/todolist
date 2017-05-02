@@ -1,0 +1,387 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/* line 4, ../sass/style.scss */
+body {
+  background: #F3F3F3;
+  background-size: cover;
+  height: 100%;
+}
+/* line 9, ../sass/style.scss */
+body * {
+  box-sizing: border-box;
+}
+form{
+  margin: 0 0 20px;
+}
+/* line 16, ../sass/style.scss */
+.title {
+  font-size: 24px;
+  padding: 15px 30px;
+  background: #454545;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-family: 'Chivo','Ariel','Montserrat', Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+/* line 26, ../sass/style.scss */
+.switch {
+  display: none;
+  padding: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  border-radius: 25px;
+}
+/* line 35, ../sass/style.scss */
+.switch i {
+  color: #333;
+}
+/* line 38, ../sass/style.scss */
+.switch:hover .list {
+  display: block;
+}
+
+/* line 43, ../sass/style.scss */
+.switch .list {
+  display: none;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  color: #333;
+  text-align: left;
+  font-size: 16px;
+  background-color: #eee;
+  position: absolute;
+  top: 37px;
+  left: -12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+/* line 56, ../sass/style.scss */
+.switch .list li {
+  margin-bottom: 5px;
+}
+
+/* line 60, ../sass/style.scss */
+.category {
+  padding: 15px;
+  float: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 60, ../sass/style.scss */
+  .category {
+    width: 33.333333333333333333333%;
+  }
+}
+
+/* line 70, ../sass/style.scss */
+.form-div {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* line 75, ../sass/style.scss */
+.form {
+  padding: 30px;
+}
+
+/* line 78, ../sass/style.scss */
+.item {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  opacity: 0;
+  transition: .3s;
+  display: flex;
+  transform: translateY(30px);
+}
+/* line 89, ../sass/style.scss */
+.item:nth-child(3) {
+  margin-top: 15px;
+}
+/* line 92, ../sass/style.scss */
+.item:last-child {
+  margin-bottom: 0;
+}
+/* line 95, ../sass/style.scss */
+.item.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* line 100, ../sass/style.scss */
+.item:hover .ico {
+  transform: translateY(0) !important;
+}
+/* line 104, ../sass/style.scss */
+.item .edit {
+  width: 40px;
+  display: flex;
+}
+/* line 107, ../sass/style.scss */
+.item .edit .ico {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #3498DB;
+  padding: 5px;
+  transition: .3s;
+  transform: translateY(-101%);
+}
+/* line 116, ../sass/style.scss */
+.item .edit .ico i {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 2px;
+  vertical-align: top;
+  color: #fff;
+}
+/* line 123, ../sass/style.scss */
+.item .edit .ico i:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 126, ../sass/style.scss */
+.item .edit .ico i:last-child {
+  transform: translateY(-2px);
+}
+/* line 133, ../sass/style.scss */
+.item .edit img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  /* position: absolute; */
+  bottom: 4px;
+  align-self: flex-end;
+}
+/* line 145, ../sass/style.scss */
+.item .write-list {
+  width: calc(100% - 40px);
+  font-size: 20px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 153, ../sass/style.scss */
+.item .write-list p {
+  margin: 0;
+  background: url(../img/check0.png) 0 50% no-repeat;
+  cursor: pointer;
+  padding-left: 25px;
+  width: 100%;
+  padding-right: 10px;
+  font-family: '微軟正黑體','sans-serif';
+}
+/* line 161, ../sass/style.scss */
+.item .write-list p.completed {
+  background: url(../img/check1.png) 0 50% no-repeat;
+  text-decoration: line-through;
+  color: #aaa;
+}
+/* line 167, ../sass/style.scss */
+.item .write-list p[contenteditable="true"] {
+  background: #fff !important;
+  border: 3px solid #83cdff !important;
+  outline: 0 !important;
+}
+/* line 175, ../sass/style.scss */
+.item .write-note {
+  float: left;
+  width: calc(100% - 40px);
+  font-size: 16px;
+  color: #666;
+}
+/* line 180, ../sass/style.scss */
+.item .write-note p {
+  margin: 0;
+  padding-right: 10px;
+  font-family: '微軟正黑體','sans-serif';
+  line-height: 1.7em;
+}
+/* line 186, ../sass/style.scss */
+.item .write-note p[contenteditable="true"] {
+  background: #fff !important;
+  border: 1px solid #ddd !important;
+}
+
+/* line 192, ../sass/style.scss */
+.noteMsg {
+  background: #F6F7F8;
+}
+
+/* line 195, ../sass/style.scss */
+.feedback-input {
+  color: #666 !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  height: auto !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  border-radius: 0 !important;
+  line-height: 22px !important;
+  padding: 0 0 13px 0 !important;
+  margin: 20px 0 0 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  border-bottom: 1px solid #ddd !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+  box-shadow: none !important;
+}
+
+/* line 217, ../sass/style.scss */
+.textbox {
+  display: none !important;
+}
+/* line 219, ../sass/style.scss */
+.textbox.active {
+  display: block !important;
+}
+
+/* line 223, ../sass/style.scss */
+.textarea {
+  height: 100px !important;
+  text-align: left;
+  margin: 0 0 20px !important;
+  resize: none;
+}
+
+/* line 229, ../sass/style.scss */
+.submit-button {
+  overflow: hidden;
+  display: none !important;
+}
+/* line 231, ../sass/style.scss */
+.submit-button .plane {
+  float: right;
+  transition: .3s;
+  color: #333;
+}
+/* line 236, ../sass/style.scss */
+.submit-button .plane img {
+  width: 30px;
+  height: 30px;
+}
+/* line 242, ../sass/style.scss */
+.submit-button.active {
+  display: block !important;
+}
+
+/* line 246, ../sass/style.scss */
+.feedback-input:focus {
+  box-shadow: 0 !important;
+  border-bottom: 1px solid #ddd !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+  box-shadow: none !important;
+  color: #666 !important;
+  outline: none !important;
+  padding: 0 0 13px 0 !important;
+}
+
+/* line 260, ../sass/style.scss */
+.focused {
+  color: #30aed6;
+  border: #30aed6 solid 3px;
+}
+
+/* line 268, ../sass/style.scss */
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+/* line 275, ../sass/style.scss */
+.submit {
+  font-size: 0;
+}
+
+/* line 278, ../sass/style.scss */
+.submit > input {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 50%;
+  display: inline-block !important;
+  border: 0;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: 0;
+  font-weight: 700;
+}
+/* line 294, ../sass/style.scss */
+.submit > input:focus {
+  outline: 0;
+}
+/* line 297, ../sass/style.scss */
+.submit > input.active {
+  background: orange;
+}
+/* line 299, ../sass/style.scss */
+.submit > input.active:focus {
+  outline: 0;
+}
+
+/* line 305, ../sass/style.scss */
+#register:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+@media only screen and (max-width: 580px) {
+  /* line 314, ../sass/style.scss */
+  #form-div {
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+/* line 325, ../sass/style.scss */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #666 !important;
+}
+
+/* line 328, ../sass/style.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #666 !important;
+}
+
+/* line 331, ../sass/style.scss */
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #666 !important;
+}
+
+/* line 334, ../sass/style.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #666 !important;
+}
+
+/* line 337, ../sass/style.scss */
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background: #fff !important;
+}
