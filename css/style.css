@@ -101,6 +101,7 @@ form{
   opacity: 0;
   transition: .3s;
   transform: translateY(30px);
+  display:flex;
 }
 /* line 89, ../sass/style.scss */
 .item:nth-child(3) {
@@ -217,6 +218,7 @@ form{
 /* line 192, ../sass/style.scss */
 .noteMsg {
   background: #F6F7F8;
+  flex-wrap:wrap;
 }
 
 /* line 195, ../sass/style.scss */
