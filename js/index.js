@@ -97,7 +97,7 @@
 							      			//如果修改內容和之前相同,則保持原狀
 							      			return;
 							      		}
-							      		else if(newVal[3].replace(/\s/gi,"") === ''){
+							      		else if(newVal[3].replace(/\s/g,"") === ''){
 											//如果修改內容為空白,則刪除資料
 											document.querySelector('.'+cat+'').removeChild(document.querySelectorAll('.'+cat+' > div')[newVal[1]]);
 											delete 	val[newVal[2]];	
@@ -162,7 +162,7 @@
 						  		index ++ ;
 						  		if(!!this.children[0]){
 									
-									if(this.children[0].value.replace(/\s/gi,"") === ''){
+									if(this.children[0].value.replace(/\s/g,"") === ''){
 										//如果沒有輸入文字,則跳出請輸入文字視窗
 										alert('請輸入文字!!');
 									}else{
@@ -173,7 +173,7 @@
 									
 									
 						  		}else{
-						  			if(this.value.replace(/\s/gi,"") === '' || this.value === 'Enter the note here...'){
+						  			if(this.value.replace(/\s/g,"") === '' || this.value === 'Enter the note here...'){
 						  				//如果沒有輸入文字,則跳出請輸入文字視窗
 										alert('請輸入文字!!');
 						  			}else{
@@ -346,7 +346,7 @@
 		}			
 
 		document.addEventListener('DOMContentLoaded', function() {
-			init();
+			init();	
 		});
 
 })(window)
